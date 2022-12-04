@@ -34,6 +34,8 @@ char string_ch11 = string[10]; //string_ch1 = 'd'
 char string_ch12 = string[11]; //string_ch1 = undefined behavior could be any value
 
 string[0] = string_ch11; //string = "dello World"
+string[11] = string_ch11; //sets value of memory just after the declared string value to 100(ASCCI 'd' or 0b01100100) this can result in a hardfault - never do this
+
 
 int string_len = strlen(string); //string_len = 11
 }
