@@ -11,7 +11,7 @@
 ##### C Data Types
 
 ```c
-char            // 1 byte     -128 to 127 or 0 to 255
+char            //1 byte     -128 to 127 or 0 to 255
 unsigned char   //1 byte      0 to 255
 signed char     //1 byte      -128 to 127
 int             //4 bytes     -2,147,483,648 to 2,147,483,647
