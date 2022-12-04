@@ -21,7 +21,22 @@ double          //8 byte	Value range - 2.3E-308 to 1.7E+308	Precision - 15 decim
 ```
 
 ***
+example 1: declare a constant string and 
+```c
+#include <string.h>
 
+const char string[] = "Hello World";
+
+int main(void)
+{
+char string_ch1 = string[0]; //string_ch1 = 'H'
+char string_ch11 = string[10]; //string_ch1 = 'd'
+char string_ch12 = string[11]; //string_ch1 = undefined behavior could be any value
+string[0] = string_ch11; //string = "dello World"
+int string_len = strlen(string); //string_len = 11
+}
+```
+***
 ##### Standard Way of function declarations
 
 Main function: `int main(void) {}`
